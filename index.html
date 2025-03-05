@@ -142,7 +142,7 @@ padding: 50px 0;
                 <label for="rental_days">Liczba dni wynajmu w miesiącu:</label>
                 <input type="number" id="rental_days" name="rental_days" required>
                 <br /><br />
-                <small id="suggestion-note">Sugerowana liczba dni: 10. Możesz ją dostosować według własnych potrzeb.</small>
+                <small id="suggestion-note"></small>
 		<br />
                 <button type="button" onclick="calculateIncome()">Oblicz</button>
             </form>
@@ -198,7 +198,7 @@ padding: 50px 0;
             const suggestionNote = document.getElementById('suggestion-note');
 
             rentalDaysInput.value = suggestedDays;
-            suggestionNote.textContent = `Sugerowana liczba dni: ${suggestedDays}. Możesz ją dostosować według własnych potrzeb.`;
+            suggestionNote.textContent = ``;
         }
 
         function calculateIncome() {
